@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Forms</title>
+
+    <style scoped>
+        #app {
+            display: flex;
+        }
+        
+        #lef-side {
+            width: 50%;
+        }
+        
+        #lef-side {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/vue.js"></script>
+    <script src="js/vuex.js"></script>
+    <script src="store/index.js"></script>
+    <script src="store/utilities/formElements.js"></script>
+    <script src="components/configFormElements/textBox.js"></script>
+    <script src="components/configFormElements/textField.js"></script>
+    <script src="components/containerComponents/creationSectionComponent.js"></script>
+
+    <div id="app">
+
+        <div id="left-side">
+            <div id="addConfigElementsForm">
+                <component-a></component-a>
+                <!-- <fruity></fruity> -->
+                <!-- <fruits-f></fruits-f> -->
+            </div>
+            <div id="resultElementsForm">
+
+            </div>
+        </div>
+        <div id="right-side">
+            <div id="resultForm">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // const componentA = {
+
+        //     data() {
+
+        //         return {
+
+        //             nombre: "Hola desde la seccion de creacion"
+
+        //         };
+        //     },
+        //     template: `
+        //     <div>
+
+        //         {{ nombre }}
+
+        //     </div>
+
+
+        // `
+
+        // };
+
+        let vm = new Vue({
+
+            el: "#app",
+            components: {
+
+                componentA
+
+            }
+
+        });
+
+        // define component variable 
+        //     const fruity = {
+        //         data() {
+        //             return {
+        //                 fruits: ["Apple", "Orange", "Avocado", "Coconut", "Kiwi", "Mango"]
+        //             };
+        //         },
+        //         template: `
+        // <ul>
+        // <li v-for="fruit in fruits">{{ fruit }}</li>
+        // </ul> 
+        // `
+        //     };
+
+
+        // create a root instance and register the local component inside it 
+        // let app = new Vue({
+        //     el: '#app',
+        //     components: {
+        //         'fruitsF': fruitY
+        //     }
+        // });
+    </script>
+
+</body>
+
+</html>
